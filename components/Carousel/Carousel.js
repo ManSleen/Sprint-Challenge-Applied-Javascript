@@ -46,6 +46,27 @@ console.log(carousel);
 
 new Carousel(carousel);
 
+let today = new Date();
+console.log(today);
+let months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+let month = months[today.getUTCMonth()];
+console.log(month);
+document.querySelector(
+  ".date"
+).innerHTML = `${month} ${today.getDate()} ${today.getFullYear()} `;
 /* If You've gotten this far, you're on your own! Although we will give you some hints:
     1. You will need to grab a reference to the carousel, and in it grab the left and right buttons
     2. You will need to grab a reference to all of the images
